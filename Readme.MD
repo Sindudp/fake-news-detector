@@ -100,10 +100,10 @@ This project uses the **ISOT Fake News Dataset** from the University of Victoria
 
 | Metric | Score |
 |--------|-------|
-| Accuracy | ~98% |
-| Precision (Fake) | ~98% |
-| Recall (Fake) | ~98% |
-| F1 Score | ~98% |
+| Accuracy | ~99.72% |
+| Precision (Fake) | 100% |
+| Recall (Fake) | 100% |
+| F1 Score | 100% |
 
 ---
 
@@ -141,7 +141,7 @@ Deployed on **Streamlit Community Cloud** for free:
 
 ## Author
 
-Built by [Your Name](https://github.com/YOUR_USERNAME) as a portfolio project.
+Built by [Sindu D.P](https://github.com/Sindudp) as a portfolio project.
 
 ---
 
