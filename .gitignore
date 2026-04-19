@@ -1,0 +1,7 @@
+data/Fake.csv
+data/True.csv
+data/dataset.csv
+model/saved/
+model/__pycache__/
+__pycache__/
+venv/
