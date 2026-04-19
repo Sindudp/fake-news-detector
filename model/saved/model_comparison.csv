@@ -1,0 +1,4 @@
+Model,Accuracy
+Logistic Regression,99.11
+Random Forest,99.67
+XGBoost,99.72
