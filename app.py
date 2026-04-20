@@ -9,6 +9,11 @@ import os
 
 sys.path.insert(0, os.path.dirname(__file__))
 
+# Auto-train if model not found
+if not os.path.exists("model/saved/model.pkl"):
+    import subprocess
+    subprocess.run(["python", "model/train.py"])
+
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from model.predict   import predict
