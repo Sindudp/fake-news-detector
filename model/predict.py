@@ -1,12 +1,10 @@
 """
 predict.py — Load saved model and make predictions
-Auto-trains if model not found
 """
 
 import joblib
 import re
 import os
-import subprocess
 
 MODEL_DIR = "model/saved"
 
@@ -16,9 +14,6 @@ _vectorizer = None
 def _load():
     global _model, _vectorizer
     if _model is None:
-        if not os.path.exists(f"{MODEL_DIR}/model.pkl"):
-            print("Model not found — training now...")
-            subprocess.run(["python", "model/train.py"], check=True)
         _model      = joblib.load(f"{MODEL_DIR}/model.pkl")
         _vectorizer = joblib.load(f"{MODEL_DIR}/vectorizer.pkl")
 
